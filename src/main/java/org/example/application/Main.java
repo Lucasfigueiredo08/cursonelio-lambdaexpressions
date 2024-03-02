@@ -17,7 +17,7 @@ public class Main {
         list.add(new Product("Notebook", 1200.00));
         list.add(new Product("Tablet", 350.50));
 
-        Collections.sort(list);
+        list.sort(new MyComparator());
 
         for (Product p : list) {
             System.out.println(p);
