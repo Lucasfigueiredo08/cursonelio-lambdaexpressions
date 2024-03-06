@@ -17,10 +17,10 @@ public class Main {
 
         list.add(new Product("Tv", 900.00));
         list.add(new Product("Notebook", 1200.00));
-        list.add(new Product("Tablet", 350.50));
+        list.add(new Product("Mouse", 30.50));
         list.add(new Product("HD Case", 80.90));
 
-        list.removeIf(new ProductPredicate());
+        list.removeIf(Product::staticProductPredicate);
 
         for (Product p : list) {
             System.out.println(p);

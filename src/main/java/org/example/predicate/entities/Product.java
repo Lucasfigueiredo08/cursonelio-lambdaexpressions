@@ -18,6 +18,10 @@ public class Product {
         this.name = name;
     }
 
+    public static boolean staticProductPredicate(Product p) {
+        return p.getPrice() >= 100.0;
+    }
+
     public double getPrice() {
         return price;
     }
